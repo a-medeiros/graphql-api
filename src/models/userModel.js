@@ -14,9 +14,15 @@ const User = db.define('users', {
     email: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false
+    },
+    updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: false
     }
-}, {
-    timestamps: false
 });
 
 

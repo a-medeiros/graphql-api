@@ -1,4 +1,5 @@
 import User from '../../../models/userModel';
+import { v4 as uuid } from 'uuid';
 
 const resolvers = {
     Query: {
@@ -18,7 +19,7 @@ const resolvers = {
     Mutation: {
         createUser: async (_, args) => {
             const newUser = User.create({
-                id: String(Math.random()),
+                id: uuid(),
                 name: args.data.name,
                 email: args.data.email
             });

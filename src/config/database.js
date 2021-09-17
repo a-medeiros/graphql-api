@@ -8,6 +8,6 @@ module.exports = {
     username: process.env.USER, 
     password: process.env.USER_PASSWORD,
     define: {
-        timestamps: false
+        timestamps: true
     }
 }

@@ -15,10 +15,12 @@
     "apollo-server": "^3.3.0",
     "dotenv": "^10.0.0",
     "graphql": "^15.5.2",
+    "graphql-iso-date": "^3.6.1",
     "graphql-tools": "^8.2.0",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

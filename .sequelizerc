@@ -1,0 +1,9 @@
+const path = require('path');
+
+// MIGRATIONS
+module.exports = {
+    // precisamos informar para o sequelize as credenciais de acesso do banco de dados
+    config: path.resolve(__dirname, 'src', 'config', 'database.js'),
+    // dizendo para o sequelize onde ele vai armazenar as migrations que ele criar
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations'),
+}

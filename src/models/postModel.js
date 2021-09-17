@@ -17,10 +17,21 @@ const Post = db.define('posts', {
     },
     author: {
         type: DataTypes.STRING,
+        allowNull: false,
+        references: {
+            model: 'users',
+            key: 'id'
+        },
+        onDelete: 'CASCADE'
+    },
+    createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false
+    },
+    updatedAt: {
+        type: DataTypes.DATE,
         allowNull: false
     }
-}, {
-    timestamps: false
 });
 
 export default Post;

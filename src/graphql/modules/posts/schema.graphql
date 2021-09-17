@@ -3,6 +3,8 @@ type Post {
     title: String!
     content: String!
     author: ID!
+    createdAt: String!
+    updatedAt: String!
 }
 
 input CreatePostInput {
@@ -14,6 +16,7 @@ input CreatePostInput {
 type Query {
     allPosts: [Post!]
     getPostById(id: ID!): Post!
+    getAllPostsFromAUser(id: ID!): [Post!]
 }
 
 type Mutation {
